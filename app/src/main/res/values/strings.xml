@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ModBusTCP</string>
+    <string name="master">Master</string>
+    <string name="slave">Slave</string>
+</resources>
