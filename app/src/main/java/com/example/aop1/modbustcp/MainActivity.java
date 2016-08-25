@@ -31,10 +31,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (view.getId()){
             case R.id.bStartMasterActivity:
                 Log.d(LOGTAG,"Master button pressed");
-                Intent intent = new Intent(this, MasterActivity.class);
+                Intent intentMaster = new Intent(this, MasterActivity.class);
+                startActivity(intentMaster);
                 break;
             case R.id.bStartSlaveActivity:
                 Log.d(LOGTAG,"Slave button pressed");
+                Intent intentSlave = new Intent(this, SlaveActivity.class);
+                startActivity(intentSlave);
                 break;
             default:
                 Log.d(LOGTAG,"Нажато не пойми что");
